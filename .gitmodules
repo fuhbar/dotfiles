@@ -1,0 +1,3 @@
+[submodule "local/src/fzf"]
+	path = local/src/fzf
+	url = https://github.com/junegunn/fzf
