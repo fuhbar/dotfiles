@@ -4,3 +4,6 @@
 [submodule "local/src/dircolors-solarized"]
 	path = local/src/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
+[submodule "/Users/fabian.doerk/.oh-my-zsh"]
+	path = /Users/fabian.doerk/.oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
