@@ -1,3 +1,6 @@
 [submodule "local/src/fzf"]
 	path = local/src/fzf
 	url = https://github.com/junegunn/fzf
+[submodule "local/src/dircolors-solarized"]
+	path = local/src/dircolors-solarized
+	url = https://github.com/seebi/dircolors-solarized.git
