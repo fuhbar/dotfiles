@@ -1,0 +1,12 @@
+cask_args appdir: '/Applications'
+
+tap 'Homebrew/bundle'
+
+brew 'coreutils'
+brew 'node'
+brew 'yarn'
+
+brew 'neovim/neovim/neovim'
+
+cask 'slack'
+cask 'google-chrome'
