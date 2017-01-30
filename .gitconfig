@@ -1,0 +1,33 @@
+[user]
+	name = Fabian Dörk
+	email = fabian.doerk@de.clara.net
+[color]
+	status = auto
+	branch = auto
+	interactive = auto
+	diff = auto
+[push]
+	default = simple
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	l = log --abbrev-commit --graph --stat
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+[diff]
+	submodule = log
+	tool = vimdiff
+[status]
+	submodulesummary = true
+[log]
+	abbrevCommit = true
+[branch]
+	autosetupmerge = true
