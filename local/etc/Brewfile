@@ -3,10 +3,11 @@ cask_args appdir: '/Applications'
 tap 'Homebrew/bundle'
 
 brew 'coreutils'
+brew 'tmux'
+brew 'neovim/neovim/neovim'
 brew 'node'
 brew 'yarn'
 
-brew 'neovim/neovim/neovim'
 
 cask 'slack'
 cask 'google-chrome'
