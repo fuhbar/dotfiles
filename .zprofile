@@ -6,6 +6,10 @@
 if [ -d "$HOME/local/bin" ] ; then
     PATH="$HOME/local/bin:$PATH"
 fi
+
+# fix the unknown locales on macos
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 	
 if [[ -n "$(echo $DISPLAY)" || "$(uname -s)" = "Darwin" ]]; then
     alias l='gls -F --color'
@@ -19,7 +23,7 @@ if [[ -n "$(echo $DISPLAY)" || "$(uname -s)" = "Darwin" ]]; then
     eval `dircolors $HOME/local/src/dircolors-solarized/dircolors.ansi-light`
 fi
 	
-find $HOME/.ssh -name id_\* | grep -v .pub$  | xargs ssh-add
+find $HOME/.ssh -name id_\* | grep -v .pub$  | xargs ssh-add >/dev/null 2>&1
 
 export HISTSIZE=10000000
 
@@ -37,12 +41,13 @@ export PERL_MB_OPT="--install_base \"$HOME/local/lib/perl5\""; export PERL_MB_OP
 export PERL_MM_OPT="INSTALL_BASE=$HOME/local/lib/perl5"; export PERL_MM_OPT;
 export PERL5LIB="$PERL5LIB:$HOME/local/lib/perl5/:$HOME/local/lib/perl5/x86_64-linux-gnu-thread-multi/auto/"
 
-export POWERLINE_CONFIG_COMMAND="$HOME/local/bin/powerline-config"
-export POWERLINE_COMMAND="$HOME/local/bin/powerline"
-powerline-daemon -q
+export POWERLINE_DIR="$HOME/Library/Python/2.7"
+export POWERLINE_CONFIG_COMMAND="$POWERLINE_DIR/bin/powerline-config"
+export POWERLINE_COMMAND="$POWERLINE_DIR/bin/powerline"
+export POWERLINE_DAEMON_COMMAND="$POWERLINE_DIR/bin/powerline-daemon"
+$POWERLINE_DAEMON_COMMAND -q
 
 export TECHHUB_HOME=~/Repos/techhub/
 if [ -e "$TECHHUB_HOME/de-platforms/home/shell-env/profile" ]; then 
     source $TECHHUB_HOME/de-platforms/home/shell-env/profile
 fi
-
