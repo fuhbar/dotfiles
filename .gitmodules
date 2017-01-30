@@ -7,3 +7,6 @@
 [submodule "/Users/fabian.doerk/.oh-my-zsh"]
 	path = /Users/fabian.doerk/.oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "local/src/powerlevel9k"]
+	path = local/src/powerlevel9k
+	url = https://github.com/bhilburn/powerlevel9k.git
