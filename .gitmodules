@@ -13,3 +13,6 @@
 [submodule "local/src/vim-plug"]
 	path = local/src/vim-plug
 	url = https://github.com/junegunn/vim-plug
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm

@@ -23,3 +23,5 @@ ln -vfs $HOME/local/src/vim-plug/plug.vim $HOME/.local/share/nvim/site/autoload/
 
 mkdir -vp $HOME/.vim/autoload/
 ln -vfs $HOME/local/src/vim-plug/plug.vim $HOME/.vim/autoload/plug.vim
+
+mkdir $HOME/.tmux/plugins/
