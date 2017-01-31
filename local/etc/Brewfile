@@ -9,6 +9,8 @@ brew 'neovim/neovim/neovim'
 brew 'node'
 brew 'yarn'
 brew 'python'	
+brew 'jq'
+brew 'httpie'
 
 cask 'slack'
 cask 'google-chrome'
