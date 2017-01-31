@@ -22,6 +22,11 @@ if [[ -n "$(echo $DISPLAY)" || "$(uname -s)" = "Darwin" ]]; then
     alias ssh='TERM=xterm ssh '
     eval `dircolors $HOME/local/src/dircolors-solarized/dircolors.ansi-light`
 fi
+
+if [[ -n "$(which nvim)" ]]; then
+    alias vim=nvim
+    alias vi=nvim
+fi
 	
 find $HOME/.ssh -name id_\* | grep -v .pub$  | xargs ssh-add >/dev/null 2>&1
 
