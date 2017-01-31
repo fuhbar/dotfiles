@@ -11,6 +11,9 @@ pip -r requirements.txt
 $HOME/local/src/fzf/install
 
 if [ $HOME/.oh-my-zsh ];
-  mkdir -p $HOME/.oh-my-zsh/custom/themes
-  ln -fs $HOME/local/src/powerlevel9k $HOME/.oh-my-zsh/custom/themes/powerlevel9k
+  mkdir -vp $HOME/.oh-my-zsh/custom/themes
+  ln -vfs $HOME/local/src/powerlevel9k $HOME/.oh-my-zsh/custom/themes/powerlevel9k
 fi
+
+mkdir -vp $HOME/.local/share/nvim/site/autoload/
+ln -vfs $HOME/local/src/vim-plug/plug.vim $HOME/.local/share/nvim/site/autoload/plug.vim

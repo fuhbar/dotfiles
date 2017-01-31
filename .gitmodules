@@ -10,3 +10,6 @@
 [submodule "local/src/powerlevel9k"]
 	path = local/src/powerlevel9k
 	url = https://github.com/bhilburn/powerlevel9k.git
+[submodule "local/src/vim-plug"]
+	path = local/src/vim-plug
+	url = https://github.com/junegunn/vim-plug
