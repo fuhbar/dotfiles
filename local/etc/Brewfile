@@ -16,6 +16,7 @@ brew 'httpie'
 brew 'ctags'
 brew 'neovim/neovim/neovim'
 brew 'mono'
+brew 'hping'
 
 cask 'slack'
 cask 'google-chrome'
