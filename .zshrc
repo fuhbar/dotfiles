@@ -14,3 +14,7 @@ fi
 if [ -f $HOME/local/share/google-cloud-sdk/completion.zsh.inc ]; then
   source "$HOME/local/share/google-cloud-sdk/completion.zsh.inc"
 fi
+
+if [ -n "$(which kubectl 2>&1 >/dev/null)" ]; then
+    source <(kubectl completion zsh)  # setup autocomplete in zsh
+fi
