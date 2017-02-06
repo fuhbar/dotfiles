@@ -17,6 +17,7 @@ brew 'ctags'
 brew 'neovim/neovim/neovim'
 brew 'mono'
 brew 'hping'
+brew 'pwgen'
 
 cask 'slack'
 cask 'google-chrome'
