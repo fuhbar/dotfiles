@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ "$(uname -s)" == "Darwin" ]; then
+    echo "Must be ran on MacOS"
+    exit 1
+fi
+
+# Lower timeout of AD connect (check AD conf: dsconfigad -show)
+sudo defaults write /Library/Preferences/com.apple.loginwindow DSBindTimeout -int 8
+
+# This tweak can be used to change the intensity of the font smoothing
+# (anti-aliasing), either making the font's smoother or to disable altogether.
+# defaults write NSGlobalDomain AppleFontSmoothing -integer 4
