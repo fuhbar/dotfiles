@@ -79,6 +79,9 @@ Plug 'hashivim/vim-terraform'
 " Shows a git diff in the gutter (sign column) and stages/undoes hunks.
 Plug 'airblade/vim-gitgutter'
 
+" kubernetes YAML snippets, as well as a growing number of integrations with kubectl.
+Plug 'andrewstuart/vim-kubernetes'
+
 
 " Initialize plugin system
 call plug#end()
@@ -117,8 +120,9 @@ set noswapfile
 set nobackup
 set nowb
 
+set mouse=
 " yank to systems clipboard
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
 
 " Wrap long lines between words
 "set wrap lbr
