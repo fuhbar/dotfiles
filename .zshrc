@@ -20,6 +20,6 @@ fi
 
 unsetopt sharehistory
 
-for file in common glcoud; do 
+for file in common gcloud; do 
     [ -f $HOME/local/etc/$file.sh.inc ] && source $HOME/local/etc/$file.sh.inc 
 done
