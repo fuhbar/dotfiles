@@ -2,7 +2,6 @@
 
 [ -f $HOME/.oh-my-zshrc ] && source $HOME/.oh-my-zshrc
 
-
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -20,3 +19,7 @@ if [ -n "$(which kubectl 2>&1 >/dev/null)" ]; then
 fi
 
 unsetopt sharehistory
+
+for file in common glcoud; do 
+    [ -f $HOME/local/etc/$file.sh.inc ] && source $HOME/local/etc/$file.sh.inc 
+done
