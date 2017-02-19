@@ -82,6 +82,15 @@ Plug 'airblade/vim-gitgutter'
 " kubernetes YAML snippets, as well as a growing number of integrations with kubectl.
 Plug 'andrewstuart/vim-kubernetes'
 
+" Vim script for text filtering and alignment
+Plug 'godlygeek/tabular'
+
+" Syntax highlighting, matching rules and mappings for the original Markdown
+" and extensions. Depends on 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+
+" A vim plugin to generate table of contents for Markdown files.
+Plug 'mzlogin/vim-markdown-toc'
 
 " Initialize plugin system
 call plug#end()
@@ -359,3 +368,8 @@ nmap <leader>20 <Plug>BufTabLine.Go(20)
 
 " Butane ---------------------------------------------------------------------
 noremap <leader>bd :Bclose<CR>      " Close the buffer.
+
+" plasticboy/vim-markdown ----------------------------------------------------
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_folding_style_pythonic = 1
+let g:vim_markdown_toc_autofit = 1
