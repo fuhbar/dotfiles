@@ -92,6 +92,9 @@ Plug 'plasticboy/vim-markdown'
 " A vim plugin to generate table of contents for Markdown files.
 Plug 'mzlogin/vim-markdown-toc'
 
+" Syntax for Jenkins Pipeline DSL
+Plug 'martinda/Jenkinsfile-vim-syntax'
+
 " Initialize plugin system
 call plug#end()
 
