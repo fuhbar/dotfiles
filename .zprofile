@@ -44,9 +44,9 @@ export LD_LIBRARY_PATH=${HOME}/local/lib/:${LD_LIBRARY_PATH}
 
 export PATH="$PATH:~/Library/Python/2.7/bin/"
 
-export PERL_MB_OPT="--install_base \"$HOME/local/lib/perl5\""; export PERL_MB_OPT;
-export PERL_MM_OPT="INSTALL_BASE=$HOME/local/lib/perl5"; export PERL_MM_OPT;
-export PERL5LIB="$PERL5LIB:$HOME/local/lib/perl5/:$HOME/local/lib/perl5/x86_64-linux-gnu-thread-multi/auto/"
+export PERL_MB_OPT="--install_base \"$HOME/local/\""
+export PERL_MM_OPT="INSTALL_BASE=$HOME/local/"
+export PERL5LIB="$PERL5LIB:$HOME/local/lib/perl5/"
 
 export POWERLINE_DIR="$HOME/Library/Python/2.7"
 export POWERLINE_CONFIG_COMMAND="$POWERLINE_DIR/bin/powerline-config"
