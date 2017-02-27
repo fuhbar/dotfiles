@@ -22,6 +22,7 @@ brew 'pwgen'
 brew 'kubernetes-helm'
 brew 'go'
 brew 'gotags'
+brew 'terraform'
 
 cask 'slack'
 cask 'google-chrome'
