@@ -23,6 +23,7 @@ brew 'kubernetes-helm'
 brew 'go'
 brew 'gotags'
 brew 'terraform'
+brew 'vault'
 brew 'ag'
 
 cask 'slack'
