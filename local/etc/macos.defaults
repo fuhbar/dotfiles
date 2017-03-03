@@ -11,3 +11,7 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow DSBindTimeout -in
 # This tweak can be used to change the intensity of the font smoothing
 # (anti-aliasing), either making the font's smoother or to disable altogether.
 # defaults write NSGlobalDomain AppleFontSmoothing -integer 4
+
+defaults write -globalDomain AppleFontSmoothing -int 1 
+
+defaults write NSGlobalDomain AppleAntiAliasingThreshold -int 1
