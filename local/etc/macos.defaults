@@ -6,7 +6,7 @@ if [ "$(uname -s)" == "Darwin" ]; then
 fi
 
 # Lower timeout of AD connect (check AD conf: dsconfigad -show)
-sudo defaults write /Library/Preferences/com.apple.loginwindow DSBindTimeout -int 4
+sudo defaults write /Library/Preferences/com.apple.loginwindow DSBindTimeout -int 1
 
 # This tweak can be used to change the intensity of the font smoothing
 # (anti-aliasing), either making the font's smoother or to disable altogether.
