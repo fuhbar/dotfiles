@@ -25,6 +25,8 @@ brew 'gotags'
 brew 'terraform'
 brew 'vault'
 brew 'ag'
+brew 'ffpmpeg'
+brew 'gifsicle'
 
 cask 'slack'
 cask 'google-chrome'
