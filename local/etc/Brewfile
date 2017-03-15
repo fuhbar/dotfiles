@@ -27,6 +27,8 @@ brew 'vault'
 brew 'ag'
 brew 'ffpmpeg'
 brew 'gifsicle'
+brew 'imagemagick'
+brew 'tree'
 
 cask 'slack'
 cask 'google-chrome'
