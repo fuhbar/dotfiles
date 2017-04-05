@@ -33,6 +33,7 @@ brew 'tree'
 brew 'hg'
 brew 'wget'
 brew 'csshx'
+brew 'tmux-cssh'
 
 cask 'slack'
 cask 'google-chrome'
