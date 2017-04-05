@@ -32,6 +32,7 @@ brew 'imagemagick'
 brew 'tree'
 brew 'hg'
 brew 'wget'
+brew 'csshx'
 
 cask 'slack'
 cask 'google-chrome'
