@@ -29,3 +29,5 @@ POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
 ZSH_THEME="powerlevel9k/powerlevel9k"
+
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
