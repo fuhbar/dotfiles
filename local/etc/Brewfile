@@ -34,6 +34,7 @@ brew 'hg'
 brew 'wget'
 brew 'csshx'
 brew 'tmux-cssh'
+brew 'ipcalc'
 
 cask 'slack'
 cask 'google-chrome'
