@@ -239,7 +239,7 @@ let g:go_auto_type_info = 1
 " respectively. Display beautifully annotated source code to see which
 " functions are covered with <leader>c.
 au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>b <Plug>(go-build)
+"au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
 
