@@ -50,10 +50,10 @@ export PERL_MB_OPT="--install_base \"$HOME/local/\""
 export PERL_MM_OPT="INSTALL_BASE=$HOME/local/"
 export PERL5LIB="$PERL5LIB:$HOME/local/lib/perl5/"
 
-export POWERLINE_DIR="$HOME/Library/Python/2.7"
-export POWERLINE_CONFIG_COMMAND="$POWERLINE_DIR/bin/powerline-config"
-export POWERLINE_COMMAND="$POWERLINE_DIR/bin/powerline"
-export POWERLINE_DAEMON_COMMAND="$POWERLINE_DIR/bin/powerline-daemon"
+#export POWERLINE_DIR="/usr/local/lib/python2.7/site-packages/powerline"
+export POWERLINE_CONFIG_COMMAND="/usr/local/bin/powerline-config"
+export POWERLINE_COMMAND="/usr/local/bin/powerline"
+export POWERLINE_DAEMON_COMMAND="/usr/local/bin/powerline-daemon"
 $POWERLINE_DAEMON_COMMAND -q
 
 export TECHHUB_HOME=~/Repos/techhub/

@@ -1,0 +1,10 @@
+{
+	"segments": {
+		"right": [
+			{
+				"function": "powerline.segments.common.sys.uptime",
+				"priority": 50
+			}
+		]
+	}
+}
