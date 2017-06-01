@@ -8,7 +8,7 @@
 		"window:divider":       { "fg": "solarized:base01", "bg": "solarized:base02", "attrs": [] },
 		"window:current":       { "fg": "solarized:base3",  "bg": "solarized:base0", "attrs": [] },
 		"window_name":          { "fg": "solarized:base3",  "bg": "solarized:base0", "attrs": ["bold"] },
-		"session":              { "fg": "solarized:base3",  "bg": "solarized:blue", "attrs": [] },
+		"session":              { "fg": "solarized:base3",  "bg": "solarized:base00", "attrs": [] },
 		"session:prefix":       { "fg": "solarized:base01", "bg": "solarized:base3",  "attrs": [] }
 	}
 }
