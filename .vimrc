@@ -132,6 +132,9 @@ set noswapfile
 set nobackup
 set nowb
 
+set cursorline
+set showtabline=1
+
 set mouse=
 " yank to systems clipboard
 "set clipboard=unnamedplus
@@ -151,6 +154,7 @@ let mapleader = ","
 
 "nmap <leader>.  @:
 
+"hi CursorLine cterm=underline ctermbg=187 guibg=Grey90
 
 autocmd Filetype yaml setlocal ts=2 sw=2 et
 
@@ -396,3 +400,11 @@ autocmd FileType markdown
 " terraform ------------------------------------------------------------------
 let g:terraform_align=1
 autocmd FileType terraform set ts=2 sw=2 et
+
+" ---------------------------------------------------------------------------
+hi CursorLine cterm=underline 
+" Uncomment the following to have Vim jump to the last position when
+" reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
