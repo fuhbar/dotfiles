@@ -35,6 +35,8 @@ brew 'wget'
 brew 'csshx'
 brew 'tmux-cssh'
 brew 'ipcalc'
+brew 'iproute2mac'
+brew 'qcachegrind'
 
 cask 'slack'
 cask 'google-chrome'
