@@ -60,3 +60,5 @@ if [ -e "$TECHHUB_HOME/de-platforms/home/shell-env/profile" ]; then
 fi
 
 export HOMEBREW_NO_GITHUB_API=1
+
+export EDITOR=vim

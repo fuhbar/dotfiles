@@ -31,3 +31,5 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
+
+[ -n "$(which direnv 2>/dev/null)" ] && eval "$(direnv hook zsh)"
