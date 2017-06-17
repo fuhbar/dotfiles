@@ -21,8 +21,6 @@ if [[ -n "$(echo $DISPLAY)" || "$(uname -s)" = "Darwin" ]]; then
     export TERM=xterm-256color
     alias ssh='TERM=xterm ssh '
     eval `dircolors $HOME/local/src/dircolors-solarized/dircolors.ansi-light`
-
-    alias k='kubectl'
 fi
 
 if [[ -n "$(which nvim)" ]]; then

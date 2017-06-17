@@ -21,3 +21,6 @@ function gcloud_pod_logs {
     POD="$(kubectl get pods --all-namespaces | grep $1 | awk '{print $2}')"
     gcloud compute ssh $(kubectl -n $NS get pod $POD -o jsonpath="{.spec.nodeName}") -- "bash -c 'docker ps -a -q --format=\"{{.ID}} {{.Names}}\" | grep $POD | while read id name; do echo -e \"\nDOCKER LOGS OF: \$name\n==================================================================\"; docker logs --tail=50 \$id; done'"
 }
+
+alias glcoud=gcloud
+alias k='kubectl "--context=${KUBECTL_CONTEXT:-$(kubectl config current-context)}" ${KUBECTL_NAMESPACE/[[:alnum:]-]*/--namespace=${KUBECTL_NAMESPACE}}'
