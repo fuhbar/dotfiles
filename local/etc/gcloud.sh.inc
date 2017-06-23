@@ -25,3 +25,4 @@ function gcloud_pod_logs {
 alias glcoud=gcloud
 alias k='kubectl "--context=${KUBECTL_CONTEXT:-$(kubectl config current-context)}" ${KUBECTL_NAMESPACE/[[:alnum:]-]*/--namespace=${KUBECTL_NAMESPACE}}'
 alias helm='helm "--kube-context=${KUBECTL_CONTEXT:-$(kubectl config current-context)}"'
+alias helmfile='helmfile "--kube-context ${KUBECTL_CONTEXT:-$(kubectl config current-context)}"'
