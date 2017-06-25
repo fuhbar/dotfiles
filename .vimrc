@@ -242,10 +242,11 @@ let g:go_auto_type_info = 1
 " and go test for the current package with <leader>b and <leader>t
 " respectively. Display beautifully annotated source code to see which
 " functions are covered with <leader>c.
-au FileType go nmap <leader>r <Plug>(go-run)
-"au FileType go nmap <leader>b <Plug>(go-build)
-au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <leader>c <Plug>(go-coverage)
+au FileType go nmap <leader>gr <Plug>(go-run)
+au FileType go nmap <leader>gb <Plug>(go-build)
+au FileType go nmap <leader>gi <Plug>(go-install)
+au FileType go nmap <leader>gt <Plug>(go-test)
+au FileType go nmap <leader>gc <Plug>(go-coverage)
 
 " By default the mapping gd is enabled, which opens the target identifier in
 " current buffer. You can also open the definition/declaration, in a new
@@ -261,7 +262,7 @@ au FileType go nmap <Leader>gd <Plug>(go-doc)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 
 " Or open the Godoc in browser
-au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
+au FileType go nmap <Leader>gB <Plug>(go-doc-browser)
 
 " Show a list of interfaces which is implemented by the type under your cursor
 " with <leader>s
