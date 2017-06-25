@@ -38,7 +38,7 @@ export QUILT_PATCHES=debian/patches
 export QUILT_REFRESH_ARGS="-p ab --no-timestamps --no-index"
 
 export GOPATH="$HOME/go"
-export PATH="$PATH:~/go/bin"
+export PATH="$PATH:$GOPATH/bin"
 
 export LD_LIBRARY_PATH=${HOME}/local/lib/:${LD_LIBRARY_PATH}
 
