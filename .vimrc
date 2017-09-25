@@ -139,16 +139,6 @@ set mouse=
 " yank to systems clipboard
 "set clipboard=unnamedplus
 
-" Wrap long lines between words
-"set wrap lbr
-"noremap  <buffer> <silent> <Up>   gk
-"noremap  <buffer> <silent> <Down> gj
-"noremap  <buffer> <silent> <Home> g<Home>
-"noremap  <buffer> <silent> <End>  g<End>
-"inoremap <buffer> <silent> <Up>   <C-o>gk
-"inoremap <buffer> <silent> <Down> <C-o>gj
-"inoremap <buffer> <silent> <Home> <C-o>g<Home>
-"inoremap <buffer> <silent> <End>  <C-o>g<End>
 " leader key which triggers custom key bindings 
 let mapleader = ","
 
@@ -409,3 +399,15 @@ hi CursorLine cterm=underline
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+" ---------------------------------------------------------------------------
+au BufRead,BufNewFile *.tex set filetype=tex
+autocmd Filetype tex set wrap lbr
+autocmd Filetype tex noremap  <buffer> <silent> <Up>   gk
+autocmd Filetype tex noremap  <buffer> <silent> <Down> gj
+autocmd Filetype tex noremap  <buffer> <silent> <Home> g<Home>
+autocmd Filetype tex noremap  <buffer> <silent> <End>  g<End>
+autocmd Filetype tex inoremap <buffer> <silent> <Up>   <C-o>gk
+autocmd Filetype tex inoremap <buffer> <silent> <Down> <C-o>gj
+autocmd Filetype tex inoremap <buffer> <silent> <Home> <C-o>g<Home>
+autocmd Filetype tex inoremap <buffer> <silent> <End>  <C-o>g<End>
