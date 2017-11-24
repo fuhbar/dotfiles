@@ -61,4 +61,4 @@ fi
 
 export HOMEBREW_NO_GITHUB_API=1
 
-export EDITOR=vim
+export EDITOR=/usr/local/bin/nvim

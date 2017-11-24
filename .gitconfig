@@ -9,7 +9,7 @@
 [push]
 	default = simple
 [core]
-	editor = vim
+	editor = /usr/local/bin/nvim
 [merge]
 	tool = vimdiff
 	conflictstyle = diff3
