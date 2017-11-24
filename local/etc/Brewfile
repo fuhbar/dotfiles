@@ -2,6 +2,8 @@ cask_args appdir: '/Applications'
 
 tap 'Homebrew/bundle'
 
+brew  'zsh'
+
 brew 'python'
 brew 'python3'
 
