@@ -95,6 +95,9 @@ Plug 'mzlogin/vim-markdown-toc'
 " Syntax for Jenkins Pipeline DSL
 Plug 'martinda/Jenkinsfile-vim-syntax'
 
+" Vim plugin to diff two directories
+Plug 'will133/vim-dirdiff'
+
 " Initialize plugin system
 call plug#end()
 
