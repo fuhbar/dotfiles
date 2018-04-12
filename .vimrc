@@ -136,6 +136,8 @@ set nobackup
 set nowb
 
 set cursorline
+hi CursorLine cterm=NONE " ctermbg=187 guibg=Grey90
+
 set showtabline=1
 
 set mouse=
@@ -150,6 +152,32 @@ let mapleader = ","
 "hi CursorLine cterm=underline ctermbg=187 guibg=Grey90
 
 autocmd Filetype yaml setlocal ts=2 sw=2 et
+
+" Show line numbers on the side
+set number
+autocmd InsertEnter * :set norelativenumber
+autocmd InsertLeave * :set relativenumber
+set relativenumber
+
+" Show a vertical line at column 80
+set colorcolumn=80
+
+" Allow 'search next' to jump back to the beginning of the file if the
+" end was reached (equivalent for 'search previous').
+set nowrapscan
+
+" Set whether to highlight matches for previous search patterns.
+set hlsearch
+
+" While typing a search command, show immediately where the so far
+" typed pattern matches.
+set incsearch
+
+" Ignore the case when searching
+set ignorecase
+
+" When searching, try to be smart about cases
+set smartcase
 
 "EasyMotion Scripts-----------------------------------------------------------
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
@@ -396,7 +424,6 @@ let g:terraform_align=1
 autocmd FileType terraform set ts=2 sw=2 et
 
 " ---------------------------------------------------------------------------
-hi CursorLine cterm=underline 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
 if has("autocmd")
