@@ -22,6 +22,7 @@
 	last = log -1 HEAD
 	l = log --abbrev-commit --graph --stat
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+	dt = difftool
 [diff]
 	submodule = log
 	tool = vimdiff
@@ -31,3 +32,5 @@
 	abbrevCommit = true
 [branch]
 	autosetupmerge = true
+[difftool]
+	prompt = false
