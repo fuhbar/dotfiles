@@ -45,6 +45,7 @@ brew 'awscli'
 brew 'azure-cli'
 brew 'docker-machine-driver-hyperkit'
 brew 'docker-machine-driver-xhyve'
+brew 'openshift-cli'
 
 cask 'slack'
 cask 'google-chrome'
